@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer Connect - Women Empowerment Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-pulse"></div>
+                <i class="fas fa-fist-raised"></i>
+            </div>
+            <h2>EmpowerHer Connect</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-hologram">
+                    <i class="fas fa-fist-raised"></i>
+                </div>
+                <span class="brand-name">EmpowerHer</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#resources" class="nav-link">
+                    <i class="fas fa-book-open"></i>
+                    <span>Resources</span>
+                </a>
+                <a href="#jobs" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Jobs</span>
+                </a>
+                <a href="#mentorship" class="nav-link">
+                    <i class="fas fa-users"></i>
+                    <span>Mentorship</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn btn-primary btn-glow">
+                    <i class="fas fa-rocket"></i>
+                    Join Community
+                </button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 Transforming Women's Futures</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Empower</span>
+                    <span class="title-line accent">Her.</span>
+                    <span class="title-line">Transform</span>
+                    <span class="title-line">Futures.</span>
+                </h1>
+                <p class="hero-subtitle">Your gateway to cutting-edge educational resources, exclusive career opportunities, and transformative mentorship for women's advancement in the digital age.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-pill">
+                        <i class="fas fa-bolt"></i>
+                        <span>500+ Premium Resources</span>
+                    </div>
+                    <div class="stat-pill">
+                        <i class="fas fa-star"></i>
+                        <span>150+ Expert Mentors</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large btn-glow" id="explore-resources">
+                        <i class="fas fa-sparkles"></i>
+                        Explore Resources
+                    </button>
+                    <button class="btn btn-outline btn-large" id="find-opportunities">
+                        <i class="fas fa-briefcase"></i>
+                        Find Opportunities
+                    </button>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow"></div>
+                    <span>Scroll to explore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-target="500">0</div>
+                        <p class="stat-label">Premium Resources</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-target="150">0</div>
+                        <p class="stat-label">Expert Mentors</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-target="200">0</div>
+                        <p class="stat-label">Job Opportunities</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <p class="stat-label">Women Empowered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">📚 Learning Hub</div>
+                <h2 class="section-title">Educational Resources</h2>
+                <p class="section-subtitle">Access cutting-edge courses, interactive workshops, and AI-powered learning tools to accelerate your growth.</p>
+            </div>
+            
+            <!-- Resource Categories -->
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th-large"></i>
+                    All Resources
+                </button>
+                <button class="category-btn" data-category="career">
+                    <i class="fas fa-chart-line"></i>
+                    Career Development
+                </button>
+                <button class="category-btn" data-category="tech">
+                    <i class="fas fa-code"></i>
+                    Technology
+                </button>
+                <button class="category-btn" data-category="leadership">
+                    <i class="fas fa-crown"></i>
+                    Leadership
+                </button>
+                <button class="category-btn" data-category="entrepreneurship">
+                    <i class="fas fa-rocket"></i>
+                    Entrepreneurship
+                </button>
+            </div>
+            
+            <!-- Resources Grid -->
+            <div class="resources-grid" id="resources-container">
+                <!-- Resources will be dynamically loaded here -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-primary btn-large" id="view-all-resources">
+                    <i class="fas fa-eye"></i>
+                    View All Resources
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">💼 Career Portal</div>
+                <h2 class="section-title">Exclusive Job Opportunities</h2>
+                <p class="section-subtitle">Discover curated career opportunities from forward-thinking companies championing gender equality.</p>
+            </div>
+            
+            <!-- Advanced Job Filters -->
+            <div class="jobs-filter">
+                <div class="filter-group">
+                    <label>Job Type</label>
+                    <select class="filter-select modern-select" id="job-type-filter">
+                        <option value="all">All Types</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="remote">Remote</option>
+                        <option value="internship">Internship</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Industry</label>
+                    <select class="filter-select modern-select" id="industry-filter">
+                        <option value="all">All Industries</option>
+                        <option value="technology">Technology</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="education">Education</option>
+                        <option value="finance">Finance</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Experience</label>
+                    <select class="filter-select modern-select" id="experience-filter">
+                        <option value="all">All Levels</option>
+                        <option value="entry">Entry Level</option>
+                        <option value="mid">Mid Level</option>
+                        <option value="senior">Senior Level</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Salary Range</label>
+                    <select class="filter-select modern-select" id="salary-filter">
+                        <option value="all">Any Salary</option>
+                        <option value="50k">$50K+</option>
+                        <option value="80k">$80K+</option>
+                        <option value="100k">$100K+</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Jobs Grid -->
+            <div class="jobs-grid" id="jobs-container">
+                <!-- Jobs will be dynamically loaded here -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-primary btn-large" id="view-all-jobs">
+                    <i class="fas fa-briefcase"></i>
+                    View All Opportunities
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship" class="mentorship-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">👥 Mentorship Network</div>
+                <h2 class="section-title">Connect with Industry Leaders</h2>
+                <p class="section-subtitle">Build meaningful relationships with accomplished professionals who are committed to your success.</p>
+            </div>
+            
+            <div class="mentors-grid" id="mentors-container">
+                <!-- Mentors will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose EmpowerHer?</h2>
+                <p class="section-subtitle">We're building the future of women's empowerment through technology and community.</p>
+            </div>
+            
+            <div class="features-showcase">
+                <div class="feature-highlight">
+                    <div class="feature-visual">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>AI-Powered Career Matching</h3>
+                        <p>Our intelligent algorithm matches you with perfect opportunities based on your skills, interests, and career goals.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Personalized job recommendations</li>
+                            <li><i class="fas fa-check"></i> Skill gap analysis</li>
+                            <li><i class="fas fa-check"></i> Career path predictions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🌟 Our Mission</div>
+                <h2 class="section-title">Redefining Women's Empowerment</h2>
+                <p class="section-subtitle">We're on a mission to close the gender gap through technology, education, and community-driven support.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-background"></div>
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">Future-Ready Education</h3>
+                    <p class="feature-description">Access cutting-edge courses in AI, blockchain, and emerging technologies to stay ahead of the curve.</p>
+                    <div class="feature-badge">New</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-background"></div>
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Opportunities</h3>
+                    <p class="feature-description">AI-curated job matches and career opportunities from companies that value diversity and inclusion.</p>
+                    <div class="feature-badge">AI-Powered</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-background"></div>
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="feature-title">Global Community</h3>
+                    <p class="feature-description">Join a worldwide network of ambitious women supporting each other's growth and success.</p>
+                    <div class="feature-badge">10K+ Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Career?</h2>
+                <p>Join thousands of women who have accelerated their careers through our platform.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large btn-glow">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Journey
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Stay Ahead of the Curve</h2>
+                    <p class="newsletter-subtitle">Get weekly insights on emerging trends, exclusive opportunities, and community events.</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="newsletter-note">🔒 We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo-hologram">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <div class="brand-info">
+                            <span class="brand-name">EmpowerHer</span>
+                            <p class="footer-description">Building the future of women's empowerment through technology and community.</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Platform</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#jobs">Jobs</a></li>
+                            <li><a href="#mentorship">Mentorship</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Career Development</a></li>
+                            <li><a href="#">Tech Skills</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Entrepreneurship</a></li>
+                            <li><a href="#">Wellness</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Support</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Contact</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@empowerher.digital</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+27 81 234 5678</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Cape Town, South Africa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 EmpowerHer Connect. All rights reserved. | Building the future, one woman at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chat-info">
+                <h4>EmpowerHer AI</h4>
+                <span>Online</span>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">
+                <p>Hi there! I'm here to help you find resources and opportunities. How can I assist you today?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask me anything...">
+            <button class="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle -->
+    <button class="chat-toggle" id="chatToggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

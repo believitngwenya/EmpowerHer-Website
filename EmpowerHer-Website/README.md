@@ -1,4 +1,3 @@
-# EmpowerHer-Website 
 # EmpowerHer Connect 🌟
 
 A modern, responsive women empowerment platform providing educational resources, job opportunities, and mentorship connections. Built with cutting-edge web technologies to support SDG 5: Gender Equality.
